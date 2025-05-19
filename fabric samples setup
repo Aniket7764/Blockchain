@@ -1,0 +1,12 @@
+ sudo apt install golang-go
+ docker --version
+ docker-compose --version
+ ls
+ git clone -b main https://github.com/hyperledger/fabric-samples.git
+ cd fabric-samples
+ curl -sSL https://bit.ly/2ysbOFE | bash -s
+ cd test-network
+ ./network.sh
+./network.sh up
+ ./network.sh createChannel
+ ./network.sh down
